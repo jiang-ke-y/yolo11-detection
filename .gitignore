@@ -1,0 +1,76 @@
+# Byte-compiled / optimized / DLL files
+__pycache__/
+*.py[cod]
+*$py.class
+
+# C extensions
+*.so
+
+# Distribution / packaging
+.Python
+build/
+develop-eggs/
+dist/
+downloads/
+eggs/
+.eggs/
+lib/
+lib64/
+parts/
+sdist/
+var/
+wheels/
+*.egg-info/
+.installed.cfg
+*.egg
+
+# PyInstaller
+*.manifest
+*.spec
+
+# Virtual environments
+.venv/
+venv/
+env/
+ENV/
+
+# Environment / secrets
+.env
+.env.*
+!.env.example
+
+# --- Dataset & training artifacts (large / generated) ---
+data/**
+!data/.gitkeep
+!data/**/
+runs/**
+!runs/.gitkeep
+*.pt
+*.onnx
+*.engine
+*.openvino
+*.tflite
+*.coreml
+*.torchscript
+wandb/
+
+# Sample media you may add locally (keep repo light)
+assets/*.jpg
+assets/*.png
+assets/*.mp4
+!assets/.gitkeep
+
+# Ultralytics cache
+.cache/
+DLC/
+
+# --- Jupyter ---
+.ipynb_checkpoints/
+*.ipynb_checkpoints
+
+# --- OS / editor ---
+.DS_Store
+Thumbs.db
+.idea/
+.vscode/
+*.swp

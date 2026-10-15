@@ -1,0 +1,17 @@
+# Default training configuration for YOLO11
+# CLI arguments passed to src/train.py override these values.
+
+train:
+  model: yolo11n.pt        # pretrained backbone (.pt) or model name
+  data: coco8.yaml         # dataset definition (built-in sample)
+  epochs: 100              # number of training epochs
+  imgsz: 640               # image size for training
+  batch: -1                # -1 => auto batch size (batch-size search)
+  device: null             # null=auto, or 0 / "cpu" / "mps"
+  workers: 8               # dataloader worker threads
+  project: runs/detect     # output root directory
+  name: train              # experiment name
+  patience: 50             # early-stopping patience (epochs no improvement)
+  pretrained: true         # load pretrained weights
+  optimizer: auto          # SGD/Adam/AdamW/auto
+  seed: 0                  # reproducibility seed
